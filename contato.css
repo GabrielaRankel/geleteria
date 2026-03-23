@@ -1,0 +1,99 @@
+
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f5c0d0;
+}
+
+/* ===== PÁGINA CONTATO ===== */
+.pag_contato {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Imagens laterais de fundo */
+.botao_img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.botao_img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.botao_img-left {
+  left: 0;
+}
+
+.botao_img-right {
+  right: 0;
+}
+
+/* ===== CONTEÚDO CENTRAL ===== */
+.contato-pricipal {
+  width: 100%;
+  max-width: 480px;
+  background-color: #3b1a0e;
+  min-height: 100vh;
+  z-index: 1;
+  padding: 40px 32px 48px;
+}
+
+/* ===== TÍTULO ===== */
+.contato-title {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.contato-title h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 52px;
+  font-weight: 900;
+  color: #f5c0d0;
+  line-height: 1.0;
+}
+
+/* ===== EQUIPE ===== */
+.secao_desenvolvedores {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.meus_amg h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f5ede6;
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+
+.meus_amg ul {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meus_amg ul li {
+  font-size: 13px;
+  color: #f5ede6cc;
+  line-height: 1.5;
+}

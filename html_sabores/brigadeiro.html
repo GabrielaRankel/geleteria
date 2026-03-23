@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git Gelato - Calculadora</title>
+  <link rel="stylesheet" href="../style_sabores/style_brigareiro.css" />
+</head>
+<body>
+
+  <!-- ===== nav ===== -->
+  <header class="nav">
+    <nav class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="contato.html">CONTATO</a>
+    </nav>
+    <div class="nav-icon">Brigadeiro</div>
+  </header>
+
+  <!-- ===== BUSCA ===== -->
+  <section class="secao_procurar">
+    <div class="secao_bar">
+      <input type="text" placeholder="Escolha o Sabor" />
+      <button class="botao_procurar">🔍</button>
+    </div>
+  </section>
+
+  <!-- ===== FORMULÁRIO ===== -->
+  <section class="formulario">
+    <div class="formulario_perguntas">
+      <label class="formulario_pergunta">Escolha o<br />Tamanho</label>
+      <input type="text" class="formulario_resposta" placeholder="Ex: 400g (Pequeno)" />
+    </div>
+    <div class="formulario_perguntas">
+      <label class="formulario_pergunta">Escolha a<br />quantidade</label>
+      <input type="text" class="formulario_resposta" placeholder="Ex: 2 Toneladas" />
+    </div>
+    <div class="botao_calcular">
+      <button class="calc-btn">Clique<br />para<br />Calcular</button>
+    </div>
+  </section>
+
+  <!-- ===== TABELA ===== -->
+  <section class="tabela_resultado">
+    <table class="calc-table">
+      <thead>
+        <tr>
+          <th class="th-label">QUANTIDADE</th>
+          <th>POR POTE</th>
+          <th>POR TONELADA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-label">LEITE:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+        <tr>
+          <td class="td-label">CREME:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+        <tr>
+          <td class="td-label">AÇÚCAR:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+        <tr>
+          <td class="td-label">LEITE<br />CONDENSADO:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+        <tr>
+          <td class="td-label">GRANULADO:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+      </tbody>
+
+      <thead>
+        <tr>
+          <th class="th-label">PREÇO</th>
+          <th>POR POTE</th>
+          <th>POR TONELADA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-label">LEITE:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+        <tr>
+          <td class="td-label">CREME:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+        <tr>
+          <td class="td-label">AÇÚCAR:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+        <tr>
+          <td class="td-label">LEITE<br />CONDENSADO:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+        <tr>
+          <td class="td-label">GRANULADO:</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+        <tr class="tr-total">
+          <td class="td-label td-rs">R$</td>
+          <td>XXXXX</td>
+          <td>XXXXX</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ===== RESUMO ===== -->
+    <div class="resumo">
+      <div class="resumo_secao">
+        <div class="resumo-title">TAMANHO</div>
+        <div class="resumo-value">POTE XXXXXXXXX</div>
+      </div>
+      <div class="resumo_secao">
+        <div class="resumo-title resumo-qty">Quantidade</div>
+        <div class="resumo-value">40</div>
+      </div>
+      <div class="resumo_secao">
+        <div class="resumo-title resumo-price">R$</div>
+        <div class="resumo-value">2000,00</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>By Gabriela Mezzadri Rankel</p>
+  </footer>
+
+</body>
