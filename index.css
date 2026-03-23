@@ -41,57 +41,6 @@ body {
   font-size: 22px;
 }
 
-/* ===== BUSCA ===== */
-.secao_procurar {
-  background-color: #f5ede6;
-  padding: 20px 24px;
-}
-
-.secao_bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.secao_bar input {
-  flex: 1;
-  padding: 12px 20px;
-  border-radius: 999px;
-  border: 1.5px solid #e0c8bc;
-  background-color: #fff;
-  font-size: 14px;
-  color: #2e1a10;
-  outline: none;
-}
-
-.secao_bar input::placeholder {
-  color: #b09080;
-}
-
-.secao_bar input:focus {
-  border-color: #8b2e3f;
-}
-
-.botao_procurar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #8b2e3f;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.botao_procurar:hover {
-  background-color: #721f30;
-}
-
 /* ===== HERO ===== */
 .hero {
   background-color: #8b2e3f;
