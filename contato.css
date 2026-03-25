@@ -11,6 +11,37 @@ body {
   background-color: #f5c0d0;
 }
 
+/* ===== nav ===== */
+.nav {
+  background-color: #3b1a0e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #f5ede6;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: #e8b4a0;
+}
+
+.nav-icon {
+  font-size: 22px;
+}
+
 /* ===== PÁGINA CONTATO ===== */
 .pag_contato {
   min-height: 100vh;
