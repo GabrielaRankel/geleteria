@@ -4,8 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fontes: -->
+   <!-- Fonte titulo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+<!-- Fonte logo -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&family=Mystery+Quest&display=swap" rel="stylesheet">
+
+<script src="./js/index.js"defer></script>
+<link rel="stylesheet" href="./css/index.css" />
   <title>Git Gelato</title>
-  <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
@@ -14,29 +25,83 @@
   <header class="nav">
     <nav class="nav-links">
       <a href="./index.html">HOME</a>
-      <a href="./contato.html">CONTATO</a>
+      <a href="./html/contato.html">CONTATO</a>
     </nav>
-    <div class="nav-icon">🍦</div>
+    <div class="nav-icon">
+      <img src="./img/logo.png" alt="">
+    </div>
   </header>
 
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Git<br />Gelato</h1>
-      <p>Simulador de produção de sorvete 🍨</p>
+      <h1>Git Gelato</h1>
+      <h2>Sua felicidade é nosso sabor favorito</h2>
+      <p>Empresa Fictícia criada para demonstrar os conhecimentos dos alunos SESI em desenvolvimento de sistemas Web</p>
+    </div>
+    <div class="hero-image">
+      <div class="hero-img-circle">
+        <!-- imagem do sorvete aqui -->
+        <img src="./img/sorve_inicial.png" alt="Sorvete" />
+      </div>
+    
+
+     
+      </div>
     </div>
   </section>
 
-  <!-- ===== SABORES ===== --> <section class="sabores_secao"> <h2>Nosso sabor</h2> <div class="sabores_grid"> </div> <div class="sabores_secoes"> <div class="sabores_bolas_sorvete"> <img src="" alt="Ninho c/ Nutella" /> </div> <span>Ninho c/ Nutella</span> </div> </div> </section> <!-- ===== BANNER PROMO ===== --> <section class="promo-section"> <div class="promo-card"> <div class="promo-image"> <!-- imagem do novo produto aqui --> <img src="" alt="Triple Chocolate Chunk" /> </div> <div class="promo-text"> <div class="promo-badge">NEW MENU</div> <h3>Triple Chocolate Chunk</h3> <p>Serious cocoa comfort</p> </div> </div> <div class="promo-circulo"> <span class="ponto_forte"></span> <span class="ponto"></span> <span class="ponto"></span> </div> </section>
+  <!-- ===== SABORES ===== -->
+  <section class="sabores_secao">
+    <h2>Nosso sabor:</h2>
+    <div class="sabores_grid">
+    </div>
+    <div class="sabores_secoes">
+      <div class="sabores_bolas_sorvete">
+        <a href="./html/ninho_nutella.html">
+          <img src="./img/ninho_nutella.png" alt="Ninho c/ Nutella" />
+        </a>
+      </div>
+      <p>Ninho c/ Nutella</p>
+    </div>
+    </div>
+  </section>
 
+  <!-- ===== BANNER PROMO ===== -->
+  <section class="promo-section">
+    <div class="promo-card">
+      <div class="promo-image">
+        <!-- imagem do novo produto aqui -->
+        <img src="./img/sorvete_sabores.webp" alt="Novos sabores de sorvete" />
+      </div>
+      <div class="promo-text">
+        <div class="promo-badge">NOVO MENU</div>
+        <h3>Novos sabores prontinhos!</h3>
+        <p>Dê uma olhada em nosso cardápio.</p>
+      </div>
+    </div>
+
+    <div class="promo-circulo">
+      <span class="ponto_forte"></span>
+      <span class="ponto"></span>
+      <span class="ponto"></span>
+    </div>
+  </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>By Gabriela Mezzadri Rankel</p>
+    <details>
+      <summary  id="menor">Créditos:</summary>
+  
+      <p>&copy; Clarice Heitmann Santos</p>
+      <p>&copy; Gabriela Mezzadri Rankel</p>
+      <p>&copy; Paula Ferreira Coutinho</p>
+      <p>&copy; Pietro Francio de Miranda</p>
+    </details>
   </footer>
 
-  <!-- ✅ IMPORTANTE: carregar o JS -->
-  <script type="module" src="./html_sabores/ninho_nutella.html"></script>
+  <!-- IMPORTANTE: carregar o JS -->
+  <script type="module" src="./html/ninho_nutella.html"></script>
 
 </body>
 </html>

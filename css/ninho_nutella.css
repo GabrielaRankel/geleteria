@@ -1,3 +1,16 @@
+/* Titulos */
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Logo */
+.mystery-quest-regular {
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -139,20 +152,22 @@ body {
 
 .botao_calcular {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
 .calc-btn {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #f5c0d0, #e89ab0);
+  font-family: "Delius", cursive;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 12px;
+  background: #e0c8bc;
   border: none;
   cursor: pointer;
-  font-size: 13px;
-  font-weight: 700;
-  color: #3b1a0e;
+  font-size: 18px;
+  font-weight: 600;
+  color:#3b1a0e;
   line-height: 1.4;
   text-align: center;
   box-shadow: 0 4px 16px #e89ab055;
@@ -268,11 +283,21 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-  background-color: #3b1a0e;
-  color: #f5ede6;
+  background: #5a1e0e;
+  color: white;
+  padding: 15px;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
 }
+
+summary {
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+details[open] summary {
+  margin-bottom: 15px;
+}
+

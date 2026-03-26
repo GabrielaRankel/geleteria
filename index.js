@@ -1,6 +1,6 @@
-import Custo from "./modules/custo.js"
-import Receita from "./modules/receita.js"
-import Sorvete from "./modules/sorvete.js"
+import Custo from "./models/custo.js"
+import Receita from "./models/receita.js"
+import Sorvete from "./models/sorvete.js"
 
 const TONELADAS = 1
 

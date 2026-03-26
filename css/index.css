@@ -1,3 +1,25 @@
+/* Fontes */
+
+/* Titulos */
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Logo */
+.mystery-quest-regular {
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Texto */
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +34,7 @@ body {
 
 /* ===== nav ===== */
 .nav {
+  
   background-color: #3b1a0e;
   display: flex;
   align-items: center;
@@ -38,7 +61,21 @@ body {
 }
 
 .nav-icon {
-  font-size: 22px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #e8d5c8;
+  border: 2px solid #e0c8bc;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.nav-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ===== HERO ===== */
@@ -57,7 +94,7 @@ body {
 }
 
 .hero-text h1 {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Mystery Quest", system-ui;
   font-size: 64px;
   font-weight: 900;
   color: #f5ede6;
@@ -65,7 +102,17 @@ body {
   margin-bottom: 20px;
 }
 
+.hero-text h2 {
+  font-family: "Delius", cursive;
+  font-size: 20px;
+  font-weight: 900;
+  color: #f5ede6;
+  line-height: 0.95;
+  margin-bottom: 20px;
+}
+
 .hero-text p {
+  font-family: "Delius", cursive;
   color: #f5ede6cc;
   font-size: 14px;
   line-height: 1.6;
@@ -126,8 +173,10 @@ body {
 }
 
 .sabores_secao h2 {
-  font-size: 20px;
-  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', serif;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
   color: #2e1a10;
   margin-bottom: 28px;
   max-width: 480px;
@@ -135,6 +184,16 @@ body {
   margin-right: auto;
 }
 
+.sabores_secao p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #2e1a10;
+  font-family: "Delius", cursive;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .sabores_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -153,8 +212,8 @@ body {
 }
 
 .sabores_bolas_sorvete {
-  width: 76px;
-  height: 76px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #e8d5c8;
   border: 2px solid #e0c8bc;
@@ -163,6 +222,12 @@ body {
   align-items: center;
   justify-content: center;
   transition: transform 0.2s, border-color 0.2s;
+}
+.sabores_bolas_sorvete a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* Faz a imagem ocupar tudo bonitinho da área */
 }
 
 .sabores_bolas_sorvete img {
@@ -276,14 +341,23 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-  background-color: #3b1a0e;
-  color: #f5ede6;
+  background: #5a1e0e;
+  color: white;
+  padding: 15px;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
 }
+
+summary {
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+details[open] summary {
+  margin-bottom: 15px;
+}
+
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 480px) {
