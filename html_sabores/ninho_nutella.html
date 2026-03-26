@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Git Gelato - Calculadora</title>
-  <link rel="stylesheet" href="index.html">
-  <link rel="stylesheet" href="contato.html">
-  <link rel="stylesheet" href="ninho_nutella.css">
+  <link rel="stylesheet" href="./style_sabores/ninho_nutella.css">
+  <script type="module" src="../js_sabores/ninho_nutella.js" defer></script>
 </head>
 <body>
 
@@ -54,104 +53,17 @@
       <button id="botao_calcular" class="calc-btn">
         Calcular
       </button>
+      <button id="botao_limpar" class="limpar_btn">
+        Limpar
+      </button>
     </div>
   
   </section>
 
   <!-- ===== TABELA ===== -->
-  <section class="tabela_resultado">
-    <table class="calc-table">
-      <thead>
-        <tr>
-          <th class="th-label">QUANTIDADE</th>
-          <th>POR POTE</th>
-          <th>POR TONELADA</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="td-label">LEITE:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-        <tr>
-          <td class="td-label">CREME:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-        <tr>
-          <td class="td-label">AÇÚCAR:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-        <tr>
-          <td class="td-label">LEITE<br />CONDENSADO:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-        <tr>
-          <td class="td-label">GRANULADO:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-      </tbody>
+   
+  <section id="tabela_resultado">
 
-      <thead>
-        <tr>
-          <th class="th-label">PREÇO</th>
-          <th>POR POTE</th>
-          <th>POR TONELADA</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="td-label">LEITE:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-        <tr>
-          <td class="td-label">CREME:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-        <tr>
-          <td class="td-label">AÇÚCAR:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-        <tr>
-          <td class="td-label">LEITE<br />CONDENSADO:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-        <tr>
-          <td class="td-label">GRANULADO:</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-        <tr class="tr-total">
-          <td class="td-label td-rs">R$</td>
-          <td>XXXXX</td>
-          <td>XXXXX</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- ===== RESUMO ===== -->
-    <div class="resumo">
-      <div class="resumo_secao">
-        <div class="resumo-title">TAMANHO</div>
-        <div class="resumo-value">POTE XXXXXXXXX</div>
-      </div>
-      <div class="resumo_secao">
-        <div class="resumo-title resumo-qty">Quantidade</div>
-        <div class="resumo-value">40</div>
-      </div>
-      <div class="resumo_secao">
-        <div class="resumo-title resumo-price">R$</div>
-        <div class="resumo-value">2000,00</div>
-      </div>
-    </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
