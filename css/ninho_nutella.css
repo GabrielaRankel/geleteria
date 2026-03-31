@@ -259,6 +259,7 @@ body {
 
 /* ===== RESUMO ===== */
 .resumo {
+  margin-top: 20px;
   display: flex;
   background-color: #3b1a0e;
   border-top: 2px solid #5a3020;
@@ -316,3 +317,9 @@ details[open] summary {
   margin-bottom: 15px;
 }
 
+.h3Tabela{
+  text-align: center;
+    font-family: "Delius", cursive;
+  margin: 30px;
+  font-weight: bold;
+}
