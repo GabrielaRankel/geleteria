@@ -1,6 +1,6 @@
-import Sorvete from "../models/Sorvete.js"
-import Receita from "../models/Receita.js"
-import Custo from "../models/Custo.js"
+import Sorvete from "../models/sorvete.js"
+import Receita from "../models/receita.js"
+import Custo from "../models/custo.js"
 
 const botaoCalcular = document.getElementById('botao_calcular')
 const botaoLimpar = document.getElementById('botao_limpar')
