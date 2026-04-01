@@ -3,73 +3,88 @@
   font-family: "Delius", cursive;
   font-weight: 400;
   font-style: normal;
-}
-
-/* Logo */
-.mystery-quest-regular {
+  }
+  
+  /* Logo */
+  .mystery-quest-regular {
   font-family: "Mystery Quest", system-ui;
   font-weight: 400;
   font-style: normal;
-}
-
-* {
+  }
+  
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
   font-family: 'Inter', Arial, sans-serif;
   background-color: #f5ede6;
   color: #2e1a10;
-}
-
-/* ===== nav ===== */
-.nav {
+  }
+  
+  /* ===== nav ===== */
+  .nav {
+  
   background-color: #3b1a0e;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
-}
-
-.nav-links {
+  }
+  
+  .nav-links {
   display: flex;
   gap: 32px;
-}
-
-.nav-links a {
+  }
+  
+  .nav-links a {
   color: #f5ede6;
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-}
-
-.nav-links a:hover {
+  }
+  
+  .nav-links a:hover {
   color: #e8b4a0;
-}
-
-.nav-icon {
-  font-size: 22px;
-}
-
-/* ===== BUSCA ===== */
-.secao_procurar {
+  }
+  
+  .nav-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #e8d5c8;
+  border: 2px solid #e0c8bc;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, border-color 0.2s;
+  }
+  .nav-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  
+  /* ===== BUSCA ===== */
+  .secao_procurar {
   background-color: #f5ede6;
   padding: 20px 24px;
-}
-
-.secao_bar {
+  }
+  
+  .secao_bar {
   display: flex;
   align-items: center;
   gap: 10px;
   max-width: 480px;
   margin: 0 auto;
-}
-
-.secao_bar input {
+  }
+  
+  .secao_bar input {
   flex: 1;
   padding: 12px 20px;
   border-radius: 999px;
@@ -78,17 +93,17 @@ body {
   font-size: 14px;
   color: #2e1a10;
   outline: none;
-}
-
-.secao_bar input::placeholder {
+  }
+  
+  .secao_bar input::placeholder {
   color: #b09080;
-}
-
-.secao_bar input:focus {
+  }
+  
+  .secao_bar input:focus {
   border-color: #8b2e3f;
-}
-
-.botao_procurar {
+  }
+  
+  .botao_procurar {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -100,10 +115,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-
-/* ===== FORMULÁRIO ===== */
-.formulario {
+  }
+  
+  /* ===== FORMULÁRIO ===== */
+  .formulario {
   background-color: #f5ede6;
   padding: 24px;
   max-width: 480px;
@@ -112,25 +127,25 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 16px;
-}
-
-.formulario_perguntas {
+  }
+  
+  .formulario_perguntas {
   display: flex;
   align-items: center;
   gap: 12px;
   flex: 1;
   min-width: 200px;
-}
-
-.formulario_pergunta {
+  }
+  
+  .formulario_pergunta {
   font-size: 13px;
   font-weight: 800;
   color: #8b2e3f;
   line-height: 1.3;
   min-width: 80px;
-}
-
-.formulario_resposta {
+  }
+  
+  .formulario_resposta {
   flex: 1;
   padding: 10px 16px;
   border-radius: 12px;
@@ -139,25 +154,25 @@ body {
   font-size: 13px;
   color: #2e1a10;
   outline: none;
-}
-
-.formulario_resposta::placeholder {
+  }
+  
+  .formulario_resposta::placeholder {
   color: #b09080;
   font-style: italic;
-}
-
-.formulario_resposta:focus {
+  }
+  
+  .formulario_resposta:focus {
   border-color: #8b2e3f;
-}
-
-.botao_calcular {
+  }
+  
+  .botao_calcular1 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-}
-
-.calc-btn {
+  }
+  
+  .calc-btn {
   font-family: "Delius", cursive;
   margin: 20px;
   padding: 5px;
@@ -172,78 +187,79 @@ body {
   text-align: center;
   box-shadow: 0 4px 16px #e89ab055;
   transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.calc-btn:hover {
+  }
+  
+  .calc-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px #e89ab077;
-}
-
-/* ===== TABELA ===== */
-.tabela_resultado {
+  }
+  
+  /* ===== TABELA ===== */
+  .tabela_resultado {
   background-color: #f5ede6;
   padding: 0 24px 32px;
   max-width: 480px;
   margin: 0 auto;
-}
-
-.calc-table {
+  }
+  
+  .calc-table {
   width: 100%;
   border-collapse: collapse;
   background-color: #3b1a0e;
   border-radius: 12px;
   overflow: hidden;
-}
-
-.calc-table th,
-.calc-table td {
+  }
+  
+  .calc-table th,
+  .calc-table td {
   padding: 10px 14px;
   font-size: 12px;
   text-align: left;
-}
-
-.calc-table thead tr {
+  }
+  
+  .calc-table thead tr {
   background-color: #3b1a0e;
-}
-
-.calc-table th {
+  }
+  
+  .calc-table th {
   color: #f5c0d0;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-}
-
-.th-label {
+  }
+  
+  .th-label {
   color: #f5c0d0 !important;
-}
-
-.calc-table tbody tr {
+  }
+  
+  .calc-table tbody tr {
   background-color: #3b1a0e;
   border-top: 1px solid #5a3020;
-}
-
-.calc-table tbody td {
+  }
+  
+  .calc-table tbody td {
   color: #f5ede6;
   font-size: 12px;
-}
-
-.td-label {
+  }
+  
+  .td-label {
   color: #f5ede6 !important;
   font-weight: 400;
-}
-
-.td-rs {
+  }
+  
+  .td-rs {
   color: #f5c0d0 !important;
   font-weight: 800;
-}
-
-.tr-total td {
+  }
+  
+  .tr-total td {
   border-top: 2px solid #8b2e3f;
-}
-
-/* ===== RESUMO ===== */
-.resumo {
+  }
+  
+  /* ===== RESUMO ===== */
+  .resumo {
+    margin-top: 20px;
   display: flex;
   background-color: #3b1a0e;
   border-top: 2px solid #5a3020;
@@ -251,53 +267,59 @@ body {
   gap: 8px;
   align-items: flex-start;
   border-radius: 0 0 12px 12px;
-}
-
-.resumo_secao {
+  }
+  
+  .resumo_secao {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 4px;
-}
-
-.resumo-title {
+  }
+  
+  .resumo-title {
   font-size: 13px;
   font-weight: 800;
   color: #f5ede6;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-}
-
-.resumo-qty {
+  }
+  
+  .resumo-qty {
   color: #f5c0d0;
-}
-
-.resumo-price {
+  }
+  
+  .resumo-price {
   color: #f5c0d0;
-}
-
-.resumo-value {
+  }
+  
+  .resumo-value {
   font-size: 12px;
   color: #f5ede6cc;
-}
-
-/* ===== FOOTER ===== */
-.footer {
+  }
+  
+  /* ===== FOOTER ===== */
+  .footer {
   background: #5a1e0e;
   color: white;
   padding: 15px;
   text-align: center;
-}
-
-summary {
+  }
+  
+  summary {
   cursor: pointer;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-details[open] summary {
+  }
+  
+  details[open] summary {
   margin-bottom: 15px;
-}
-
+  }
+  
+  .h3Tabela{
+    text-align: center;
+      font-family: "Delius", cursive;
+    margin: 30px;
+    font-weight: bold;
+  }
