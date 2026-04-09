@@ -1,4 +1,3 @@
-import Sorvete from "../models/sorvete.js"
 import Receita from "../models/receita.js"
 import Custo from "../models/custo.js"
 
@@ -7,35 +6,22 @@ const botaoLimpar = document.getElementById('botao_limpar')
 const tabela_resultado = document.getElementById('tabela_resultado')
 const selectTamanho = document.getElementById('tamanho')
 
-selectTamanho.addEventListener('change', () => {
-    const raioInput = document.getElementById('raio')
-
-    if (selectTamanho.value !== 'custom') {
-        raioInput.value = selectTamanho.value
-    } else {
-        raioInput.value = ''
-        raioInput.focus()
-    }
-})
-
 botaoCalcular.addEventListener('click', () => {
     const TONELADAS = Number(document.getElementById('toneladas').value)
-    const raio = Number(document.getElementById('raio').value)
-    const altura = Number(document.getElementById('altura').value)
+    const pesoPote = Number(selectTamanho.value) // agora correto
 
-    if (raio <= 0 || altura <= 0) {
-        alert("Digite valores válidos para raio e altura!")
+    if (pesoPote <= 0 || TONELADAS <= 0) {
+        alert("Valores inválidos!")
         return
     }
 
-    // Geometria
-    const pote = new Sorvete(raio, altura)
-    const pesoPote = pote.calcularPeso()
-
-    // Receita (AGORA COM TONELADAS)
+    // Receita
     const receita = new Receita()
     const qtdeIngredientes = receita.calcularQtdeIngrediente(TONELADAS)
-    const qtdeSorvete = receita.calcularQtdeSorvete(TONELADAS, pesoPote)
+
+    // Quantidade de potes (baseado no peso)
+    const totalGramas = TONELADAS * 1000000
+    const qtdeSorvete = Math.floor(totalGramas / pesoPote)
 
     // Custos
     const custo = new Custo()
@@ -44,19 +30,18 @@ botaoCalcular.addEventListener('click', () => {
     const custoTotal = custo.formatar(custo.totalCusto)
     const custoUnitario = custo.formatar(custo.calcularCustoPorPote(qtdeSorvete))
 
-   const relatorioNaTela = `
+    const relatorioNaTela = `
 <section class="tabela_resultado">
 
   <h3 class="h3Tabela">Relatório: ${TONELADAS} Tonelada(s)</h3>
 
   <table class="calc-table">
     
-    <!-- ===== QUANTIDADE ===== -->
     <thead>
       <tr>
         <th class="th-label">QUANTIDADE</th>
-        <th>POR POTE</th>
-        <th>POR TONELADA</th>
+        <th>POR POTE (kg)</th>
+        <th>POR TONELADA (kg)</th>
       </tr>
     </thead>
     <tbody>
@@ -87,12 +72,11 @@ botaoCalcular.addEventListener('click', () => {
       </tr>
     </tbody>
 
-    <!-- ===== PREÇO ===== -->
     <thead>
       <tr>
         <th class="th-label">PREÇO</th>
-        <th>POR POTE</th>
-        <th>POR TONELADA</th>
+        <th>POR POTE (R$)</th>
+        <th>POR TONELADA (R$)</th>
       </tr>
     </thead>
     <tbody>
@@ -129,11 +113,10 @@ botaoCalcular.addEventListener('click', () => {
     </tbody>
   </table>
 
-  <!-- ===== RESUMO ===== -->
   <div class="resumo">
     <div class="resumo_secao">
       <div class="resumo-title">TAMANHO</div>
-      <div class="resumo-value">Raio ${raio} / Altura ${altura}</div>
+      <div class="resumo-value">${pesoPote}g</div>
     </div>
     <div class="resumo_secao">
       <div class="resumo-title resumo-qty">Quantidade</div>
@@ -152,9 +135,8 @@ botaoCalcular.addEventListener('click', () => {
 })
 
 botaoLimpar.addEventListener('click', () => {
-    document.getElementById('tamanho').value = "35"
-    document.getElementById('raio').value = 35
-    document.getElementById('altura').value = 0.5
+    document.getElementById('tamanho').value = "400"
+    document.getElementById('toneladas').value = "1"
 
     tabela_resultado.innerHTML = ""
 })

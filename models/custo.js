@@ -1,4 +1,15 @@
 export default class Custo {
+    
+    // <!-- Ingrendiente 1: LEITE (500 ML)
+// Ingrendiente 2: CREME (17O G)
+// Ingrediente 3: AÇÚCAR (70 G)
+// Ingrediente 4: LEITE EM PÓ (80 G) (80 REAIS)
+// Adereço: NUTELLA (80 G) (80 REAIS) -->
+
+// <!-- Leite preço 500 ml: 3 reais
+// Creme preço 170 g: 5 reais
+// açucar preço 70 g: 0,40 centavos  -->
+
     constructor(leite = 4.0, creme = 22.0, acucar = 4.0, leiteEmPo = 40.0, nutella = 90.0) {
 
         this.leite = leite
@@ -40,12 +51,3 @@ export default class Custo {
     }
 }
 
-// <!-- Ingrendiente 1: LEITE (500 ML)
-// Ingrendiente 2: CREME (17O G)
-// Ingrediente 3: AÇÚCAR (70 G)
-// Ingrediente 4: LEITE EM PÓ (80 G) (80 REAIS)
-// Adereço: NUTELLA (80 G) (80 REAIS) -->
-
-// <!-- Leite preço 500 ml: 3 reais
-// Creme preço 170 g: 5 reais
-// açucar preço 70 g: 0,40 centavos  -->
