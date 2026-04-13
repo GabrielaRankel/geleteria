@@ -1,5 +1,6 @@
 import Receita from "../models/receita.js"
 import Custo from "../models/custo.js"
+import Sorvete from "../models/sorvete.js" // ALTERADO: importado Sorvete
 
 const botaoCalcular = document.getElementById('botao_calcular')
 const botaoLimpar = document.getElementById('botao_limpar')
@@ -8,18 +9,24 @@ const selectTamanho = document.getElementById('tamanho')
 
 botaoCalcular.addEventListener('click', () => {
     const TONELADAS = Number(document.getElementById('toneladas').value)
-    const pesoPote = Number(selectTamanho.value) // agora correto
+    const pesoPote = Number(selectTamanho.value)
 
     if (pesoPote <= 0 || TONELADAS <= 0) {
         alert("Valores inválidos!")
         return
     }
 
+    // ALTERADO: cria sorvete com peso fixo
+    const sorvete = new Sorvete(pesoPote)
+
+    // ALTERADO: calcula raio automaticamente
+    const raioCalculado = sorvete.calcularRaio()
+
     // Receita
     const receita = new Receita()
     const qtdeIngredientes = receita.calcularQtdeIngrediente(TONELADAS)
 
-    // Quantidade de potes (baseado no peso)
+    // ALTERADO: usa peso fixo direto
     const totalGramas = TONELADAS * 1000000
     const qtdeSorvete = Math.floor(totalGramas / pesoPote)
 
@@ -35,8 +42,9 @@ botaoCalcular.addEventListener('click', () => {
 
   <h3 class="h3Tabela">Relatório: ${TONELADAS} Tonelada(s)</h3>
 
+  <p>Raio calculado: ${raioCalculado.toFixed(2)} cm</p> <!-- ALTERADO: mostra raio -->
+
   <table class="calc-table">
-    
     <thead>
       <tr>
         <th class="th-label">QUANTIDADE</th>

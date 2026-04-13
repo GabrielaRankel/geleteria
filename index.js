@@ -5,7 +5,8 @@ import Sorvete from "./models/sorvete.js"
 const TONELADAS = 1
 
 // Sorvete (geometria)
-const tamanho = new Sorvete(35, 0.5)
+// ALTERADO: usa peso fixo (ex: 400g)
+const tamanho = new Sorvete(400)
 const pesoSorvete = tamanho.calcularPeso()
 
 // Receita
