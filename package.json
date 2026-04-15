@@ -2,11 +2,15 @@
   "name": "gelateria_primeiro_commit",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "test":  "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
   "author": "Gabi, Paula, Pietro, Clarice",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
 }
